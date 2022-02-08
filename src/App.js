@@ -1,3 +1,4 @@
+
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import TableShow from './components/TableShow';
@@ -26,8 +27,6 @@ function App() {
     setShowLogin(true)
   }
   return (
-
-
     <Router>
       <div className='App'>
 
@@ -55,10 +54,6 @@ function App() {
         </div>
       </div>
     </Router>
-
-
-
-
 
   );
 }
