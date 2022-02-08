@@ -32,12 +32,15 @@ function App() {
 
         <Navbar className='navbar navbar-expand-lg navbar-primary bg-dark'>
           <Container>
-            <Navbar.Brand style={{ color: 'white' }}>EMS </Navbar.Brand>
+            <Navbar.Brand style={{ color: 'white' }}>Employee Details</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                {showLogin ? <div><Link to="/login">Login</Link ><Link to='/registration'>Register</Link></div> : <div style={{ display: 'flex' }}><div><Link to="/tableshow">Employees</Link>
-                  <Link to="/add-employee" style={{ marginLeft: '15px' }}>Add Employee</Link></div><div><Link to='/login' onClick={() => { changeLogin() }}>LogOut</Link></div></div>}
+
+              <Nav className="me-auto mr-2">
+                <div >
+                  {showLogin ? <div id='nav' ><Link to="/login" id='nav1'>Login</Link ><Link id='nav1' to='/registration'>Register</Link></div> : <div style={{ display: 'flex' }}><div><Link id='nav1' to="/tableshow">Employees</Link>
+                    <Link id='nav1' to="/add-employee" style={{ marginLeft: '15px' }}>Add Employee</Link></div><div><Link id='nav1' to='/login' onClick={() => { changeLogin() }}>LogOut</Link></div></div>}
+                </div>
               </Nav>
             </Navbar.Collapse>
           </Container>

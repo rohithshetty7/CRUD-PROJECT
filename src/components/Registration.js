@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { Link } from 'react-router-dom';
 import ContextData from '../context/context';
@@ -9,7 +9,7 @@ import { withRouter } from 'react-router-dom';
 
 function Registration(props) {
 
-    const recivedData=useContext(ContextData)
+    const recivedData = useContext(ContextData)
 
     const [userDetails, setuserDetails] = useState({
         firstName: '',
@@ -45,12 +45,12 @@ function Registration(props) {
         const isPasswordValid = validatePassword(userDetails.password)
         const isConfirmPasswordValid = validateConfirmPassword(userDetails.confirmPassword, userDetails.password)
 
-        
+
         if (isFirstNameValid && isLastNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
             alert('Valid')
             //  props.setData([...props.data, userDetails])
             props.history.push('/login')
-         
+
         } else {
             alert('Not Valid')
         }
@@ -146,7 +146,7 @@ function Registration(props) {
             return false
         }
     }
-  
+
 
     //-----------------------------------------------------------
     const handleChange = (event) => {
@@ -155,8 +155,8 @@ function Registration(props) {
         userDetailsCopy[event.target.name] = event.target.value
         setuserDetails(userDetailsCopy)
     }
-  return <div className='text-left regi'>
-         <div className="register col-4 m-auto" >
+    return <div className='text-left regi'>
+        <div className="register col-4 m-auto" >
             <p className='fsize text-center text-white font-weight-normal'>REGISTRATION FORM</p>
             <form className="shadow p-3 mb-5 bg-white rounded text-left" >
                 <div className="form-group p-2 ">
@@ -175,8 +175,8 @@ function Registration(props) {
                             }}>{firstNameError}</span> : null}
                         </div>
                         <div className="col">
-                    <label className='mt-2'>Username </label>
-                    
+                            <label className='mt-2'>Username </label>
+
 
                             <input className="bg-light form-control form-control-sm widthchange mt-2" type="lastName"
                                 name="lastName"
@@ -191,7 +191,7 @@ function Registration(props) {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className="form-group p-2">
                     <label >Email address </label><br />
                     <input className="bg-light form-control form-control-sm widthchange mt-2" type="text"
@@ -242,7 +242,7 @@ function Registration(props) {
 
 
         </div>
-  </div>;
+    </div>;
 }
 
 export default withRouter(Registration)
