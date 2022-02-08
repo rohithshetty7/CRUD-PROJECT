@@ -35,7 +35,7 @@ h2{
   background-color: white;
   width: 400px;
   padding: 30px;
-   height: 200px; 
+   height: 80px; 
    border-radius: 5px;
   margin-left: 10px;
   
@@ -91,3 +91,15 @@ background-color: darkgreen;
  /* body {
   background: -webkit-radial-gradient(top left, #90f6fb, #2c3283);
 }  */
+
+/* .me-auto m-2{
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+#nav{
+  padding-left: 200px;
+}
+#nav1{
+  padding-left: 200px;
+}
