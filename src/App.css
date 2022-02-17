@@ -1,5 +1,5 @@
 .main_divtag{
-  background-color: rgb(27, 105, 158);
+  background-color: rgba(9, 85, 250, 0.76);
   width: 482px;
   height: 800px;
   margin-left: 600px;
@@ -99,7 +99,9 @@ background-color: darkgreen;
 
 #nav{
   padding-left: 200px;
+  color: white;
 }
 #nav1{
   padding-left: 200px;
+  color: white;
 }

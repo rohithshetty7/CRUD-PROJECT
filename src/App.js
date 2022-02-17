@@ -30,7 +30,7 @@ function App() {
     <Router>
       <div className='App'>
 
-        <Navbar className='navbar navbar-expand-lg navbar-primary bg-dark'>
+        <Navbar className='navbar navbar-expand-lg navbar-primary bg-primary'>
           <Container>
             <Navbar.Brand style={{ color: 'white' }}>Employee Details</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

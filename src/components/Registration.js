@@ -156,7 +156,9 @@ function Registration(props) {
         setuserDetails(userDetailsCopy)
     }
     return <div className='text-left regi'>
-        <div className="register col-4 m-auto" >
+        <br/>
+        <br/>
+        <div className="register col-4 m-auto bg-primary" >
             <p className='fsize text-center text-white font-weight-normal'>REGISTRATION FORM</p>
             <form className="shadow p-3 mb-5 bg-white rounded text-left" >
                 <div className="form-group p-2 ">
